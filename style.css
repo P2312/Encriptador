@@ -1,0 +1,236 @@
+
+:root {
+    --color-primaria: #000000;
+    --color-secundaria: #F6F6F6;
+    --color-terciaria: #7C93C3;
+    --color-cuarto: #55679C;
+    --color-quinto: #1E2A5E;
+    --color-sexto: #E1D7B7;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #ffffff;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    
+}
+
+body{
+    height: 100%;
+}
+.Logo{
+    max-width: 100%;
+}
+header{
+    position: absolute;
+    margin: 40px 0px 0px 40px;
+}
+header .logo{
+    display: flex;
+    align-items: flex-start;
+    width: 120px;
+    height: 48px;
+}
+
+
+main{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+    margin-left: 80px;
+    background-position: center;
+}
+
+.text-area{
+    width: 100%;
+    max-width: 686px;
+    resize: none;
+    margin-top: 90px;
+    padding: 15px;
+    height: 400px;
+    color: #1E2A5E;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+}
+
+.text-area::placeholder{
+    color: #1E2A5E;
+}
+.text-area:focus{
+    outline: none;
+}
+
+.mensaje{
+    max-width: 686px;
+    resize: none;
+    margin-left: 98px;
+    padding: 20px;
+    height: 612px;
+    color: #55679C;
+    background: #E1D7B7 url('imagenes/Muñeco.png') no-repeat center;
+    border: none;
+    border-radius: 32px;
+    box-shadow: 0 24px 32px -8px rgba(0, 0, 0, 0.08);
+}
+.mensaje:focus{
+    outline: none;
+}
+
+.botones{
+    display: flex;
+    margin-top: 18px;
+
+}
+
+.btn-desencriptador{
+    background: #F6F6F6;
+    border: 1px solid #55679C;
+    border-radius: 24px;
+    color: #55679C;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 30px;
+    width: 328px;
+}
+
+.btn-encriptador{
+    background-color: #55679C;
+    border: 1px solid #55679C;
+    border-radius: 24px;
+    color: #ffffff;
+    cursor: pointer;
+    height: 67px;
+    width: 328px;
+}
+
+.btn-copiar{
+    border: 1px solid #55679C;
+    border-radius: 24px;
+    color: #55679C;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 108px;
+    margin-top: 145px;
+    position: absolute;
+    width: 156px;
+}
+.btn-encriptador:hover, .btn-desencriptador:hover, .btn-copiar:hover{
+    background: #7C93C3;
+    color: white;
+}
+
+.informacion{
+    color: #7C93C3;
+    font-size: 16px;
+    margin-top: 10px;
+}
+.dinamico {
+    background: transparent;
+    margin-left: 120px;
+    margin-top: -240px;
+    width: 360px;
+    position: absolute;
+    text-align: center;
+}
+
+.text1 {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: initial;
+    background: transparent;
+    color: #1E2A5E;
+}
+
+.text2 {
+    font-size: 16px;
+    line-height: initial;
+    background: transparent;
+    color: #1E2A5E;
+}
+
+.anuncio {
+    display: none;
+    width: 220px;
+    background-color: #7C93C3;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 100px;
+    left: 100px;
+    margin-left: -75px;
+    opacity: 0.5;
+}
+footer{
+    margin-top: 15px;
+    padding: 10px;
+    border-top: 2px solid var(--Font);
+    color: var(--Gray);
+    text-align: center;
+    height: 5px;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--Gray);
+}
+
+@media (max-width: 1250px) {
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .text-area{
+        margin: 168px 0px 0px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .botones{
+        display: flex;
+        align-items: center;
+        position: inherit;
+    }
+
+    .mensaje{
+        width: 665px;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        background: #E1D7B7 none;
+    }
+    .dinamico{
+        width: 100%;
+        height: 210px;
+        padding: 30px;
+        
+    }
+    
+}
+
+@media (max-width: 720px) {
+    header .logo{
+        width: 100%;
+        padding: 2px;
+    }
+    .text-area{
+        width:  90%;
+        font-size: 24px;
+    }
+    .mensaje{
+        width: 90%;
+    }
+    
+}
